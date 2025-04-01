@@ -30,12 +30,18 @@ The implementation of the ESP32-based Locking System using the Telegram app invo
 * Low power consumption, suitable for IoT applications.
 * Can integrate with cameras for additional security (e.g., ESP32-CAM).
 
+  ![ESP32_CAM](https://github.com/user-attachments/assets/d02dd0b5-c058-41c1-82d5-56bf31db10a5)
+
+
 
 **Servo Motor or Electronic Lock :** The locking mechanism can be implemented using either a servo motor or an electronic solenoid lock.
 
 * Servo Motor (for Physical Locking) Moves between angles (e.g., 0° and 90°) to control a latch.Can be powered directly by the ESP32 or an external supply.
 * 
 * Electronic Solenoid Lock Uses electromagnetism to control a locking bolt.Requires higher voltage (typically 12V), needing a relay for safe ESP32 control.
+
+  ![12V_Solenoid_Lock](https://github.com/user-attachments/assets/3c38b5b2-8372-4736-af09-2b9e4e6ca53d)
+
 
 
 **Power Supply :** A proper power source is needed to run both the ESP32 and the locking mechanism. Power Requirements:
@@ -44,8 +50,17 @@ The implementation of the ESP32-based Locking System using the Telegram app invo
 * Servo Motor → Typically 5V (depending on the model).
 * Solenoid Lock → Usually 12V, requiring an external power supply.
 
+  ![12V_Power_Supply](https://github.com/user-attachments/assets/c4768e09-9e64-4f76-90ff-1687a5a8d1cd)
+
+
 
 **Jumper Wires and Breadboard :*** For wiring the components together.
+
+![Jumper_Cable](https://github.com/user-attachments/assets/cce6ab89-fe84-4256-87f6-79bb50f74a31)
+
+![Breadboard](https://github.com/user-attachments/assets/0ec53022-53e5-410a-96fc-cb6b850c9f5c)
+
+
  
 
 **Relay Module (if needed) :** A relay module is needed when working with high-power components, such as a 12V solenoid lock, to safely switch power using the ESP32.
@@ -58,11 +73,18 @@ Prevents direct connection, ensuring safety and longevity.
 ## (b) Basic Circuit Diagram:
 ## **Block Diagram**
 
+![Block_diagram](https://github.com/user-attachments/assets/b3aa43a8-090e-4dd0-a023-88350bf9b6d5)
+
 
 ## **Circuit Diagram**
 
+![Circuit_Diagram](https://github.com/user-attachments/assets/62ec7980-d72e-4277-84b9-159328c51ec7)
+
 
 ## **Pin Diagram**
+
+![Pin_Diagram](https://github.com/user-attachments/assets/18c4f3ac-63e7-4288-8ee2-0a4e4c586a02)
+
 
 
 * The ESP32 will be connected to the relay or servo motor to control the locking mechanism.
@@ -73,10 +95,16 @@ Prevents direct connection, ensuring safety and longevity.
 ## Software Development
 ### (a) Programming Environment:
 
+![Arduino](https://github.com/user-attachments/assets/bc75c195-d77b-4a09-99ba-190221dbfcb5)
+
+
 
 Arduino IDE: The ESP32 can be programmed using the Arduino IDE. The IDE allows you to write, compile, and upload the code to the ESP32 board.
 
 ### (b) Libraries Required:
+
+![DUMP](https://github.com/user-attachments/assets/3654004c-01cb-4423-bbb9-97f35854f102)
+
 
 
 * WiFi.h: For connecting the ESP32 to Wi-Fi.
@@ -91,12 +119,17 @@ To control the lock via the Telegram app, you'll need to set up a Telegram Bot :
 
 ### (a) Create a new Telegram Bot:
 
+![Telegram](https://github.com/user-attachments/assets/34639928-1853-45ff-b9a7-df30c102e2a5)
+
 
 * Open the Telegram app and search for the “BotFather.”
 * Use the command /newbot to create a new bot.
 * You’ll receive an API token for your bot. Save this token as you will need it in your code.
   
 ### (b) Obtain Your Chat ID:
+
+![Bot](https://github.com/user-attachments/assets/49cd0145-0d2f-4d0f-a8ee-cb498a8080a5)
+
 
 
 * Start a conversation with your bot in Telegram.
@@ -112,6 +145,11 @@ Once the hardware is assembled and the software is loaded onto the ESP32, the sy
 
 
 ## RESULTS
+
+![WhatsApp Image 2025-04-01 at 18 03 25_650aa8b3](https://github.com/user-attachments/assets/e110481f-9e2b-4014-b47f-d4aff0980b55)
+
+
+
 The implementation of the ESP32-based Locking System controlled through the Telegram app results in several key outcomes, which demonstrate the effectiveness and practicality of the solution. Below are the key outcomes of the system:
 
 ### (a) Remote Access Control:
