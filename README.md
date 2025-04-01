@@ -14,10 +14,10 @@ This project offers a blend of embedded systems, IoT, and user-friendly app cont
 
 The implementation of the ESP32-based Locking System using the Telegram app involves both hardware and software components. The project will consist of the following key stages:
 
-Hardware Setup
-Software Development
-Telegram Bot Configuration
-Integration and Testing
+* Hardware Setup
+* Software Development
+* Telegram Bot Configuration
+* Integration and Testing
 
 ## Hardware Setup
 
